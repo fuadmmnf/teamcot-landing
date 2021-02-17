@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Session;
 use Kreait\Firebase\Factory;
 
 class IndexController extends Controller
@@ -28,5 +30,18 @@ class IndexController extends Controller
             'rules' => $this->db->collection('rules')->documents()->rows(),
             'contacts' => $this->db->collection('contacts')->documents()->rows(),
         ]);
+    }
+
+    public function saveMessage(){
+        $this->db->collection('messages')->add([
+            'name' => request('name'),
+            'email'=> request('email'),
+            'message'=> request('message'),
+            'created_at' => Carbon::now()->setTimezone('Asia/Dhaka')
+        ]);
+
+        session()->flash('message', "Your response was saved");
+
+        return redirect()->back();
     }
 }

@@ -432,7 +432,8 @@
         </div>
         <div class="row">
             <!-- form -->
-            <form id="contactusform" action="javascript:void(0)" method="post">
+            <form id="contactusform" method="POST">
+                {{ csrf_field() }}
                 <div class="col-md-10 col-sm-12 center-col">
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
@@ -447,18 +448,20 @@
                         <input name="email" type="text" placeholder="Your Email"/>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <textarea name="comment" placeholder="Your Message"></textarea>
+                        <textarea name="message" placeholder="Your Message"></textarea>
                     </div>
                     <div class="col-md-12 col-sm-12">
                         <div class="col-md-6 col-sm-6 no-padding-left"><span class="required">*Please complete all
                                     fields correctly</span></div>
-                        <div class="col-md-3 col-sm-6 f-right no-padding-right"><input id="contact-us-button"
-                                                                                       name="send message" type="button"
-                                                                                       value="send message"
-                                                                                       class="btn btn-black no-margin-top f-right no-margin-lr">
+                        <div class="col-md-3 col-sm-6 f-right no-padding-right">
+                            <input id="contact-us-button"
+                                   name="send message" type="button"
+                                   value="send message"
+                                   class="btn btn-black no-margin-top f-right no-margin-lr">
                         </div>
                     </div>
                 </div>
+
             </form>
             <!-- end form -->
         </div>

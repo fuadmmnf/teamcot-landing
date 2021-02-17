@@ -13,3 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'show']);
+Route::post('/messages', [\App\Http\Controllers\IndexController::class, 'saveMessage']);
