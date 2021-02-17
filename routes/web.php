@@ -12,5 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/clear', function () {
+    \Illuminate\Support\Facades\Artisan::call('route:clear');
+    \Illuminate\Support\Facades\Artisan::call('config:cache');
+    return 'cache cleared';
+});
+
+
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'show']);
 Route::post('/messages', [\App\Http\Controllers\IndexController::class, 'saveMessage']);
