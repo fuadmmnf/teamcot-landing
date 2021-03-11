@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Carbon\Carbon;
+use Embed\Embed;
 use Illuminate\Support\Facades\Session;
 use Kreait\Firebase\Factory;
 
@@ -25,10 +26,12 @@ class IndexController extends Controller
     {
         return view('welcome', [
             'newslist' => $this->db->collection('news')->documents()->rows(),
+            'linkslist' => $this->db->collection('links')->documents()->rows(),
             'teammembers' => $this->db->collection('teammembers')->documents()->rows(),
             'reports' => $this->db->collection('reports')->documents()->rows(),
             'rules' => $this->db->collection('rules')->documents()->rows(),
             'contacts' => $this->db->collection('contacts')->documents()->rows(),
+            'galleries' => $this->db->collection('galleries')->documents()->rows(),
         ]);
     }
 

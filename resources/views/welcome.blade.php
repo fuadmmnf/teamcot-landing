@@ -54,10 +54,10 @@
     role="navigation">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-6"><a class="logo-light" href="/"><img alt=""
-                                                                                        src="/images/newimg/logo.png"
-                                                                                        class="logo"/></a><a
-                    class="logo-dark" href="/"><img
+            <div class="col-md-3 col-sm-3 col-xs-6"><a class="logo-light" href="index.html"><img alt=""
+                                                                                                 src="/images/newimg/logo.png"
+                                                                                                 class="logo"/></a><a
+                    class="logo-dark" href="index.html"><img
                         alt="" src="/images/newimg/logo.png" class="logo"/></a>
             </div>
             <div class="navbar-header">
@@ -136,6 +136,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center center-col">
+                <img class="about-logo" src="/images/newimg/logo.png">
                 <span class="margin-three no-margin-top display-block letter-spacing-2">EST. 2001</span>
                 <h1>ABOUT TEAMCOT BANGLADESH LTD</h1>
                 <p class="text-med width-90 center-col margin-five no-margin-bottom">Teamcot Bangladesh Ltd is a
@@ -190,6 +191,7 @@
         </div>
     </div>
 </section>
+
 <section class="wow fadeIn">
     <div class="container">
         <div class="row">
@@ -210,6 +212,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="padding-three title-bc" id="report">
     <div class="container">
@@ -234,7 +237,7 @@
             <a class="btn highlight-button-black-border margin-four no-margin-bottom wow fadeInUp"
                href="{{$reports[1]->data()['file_url']}}" target="_blank">Local Report</a> <span>
                     <a class="btn highlight-button-black-border margin-four no-margin-bottom wow fadeInUp"
-                       href="{{$reports[0]->data()['file_url']}}" target="_blank">International Report</a> <span>
+                       href="{{$reports[0]->data()['file_url']}}" target="_blank">International Report</a> </span>
 
         </div>
     </div>
@@ -263,16 +266,16 @@
             <div class="col-md-10 col-sm-10 text-center center-col">
                 <div class="col-md-6 col-sm-6 col-xs-4 footer-link2">
                     <ul class="ul-a-font">
-                        @foreach(array_slice($newslist, 0, ceil(count($newslist) / 2)) as $news)
-                            <li><a href="{{$news->data()['link']}}" class="link-list"
-                                   target="_blank">{{$news->data()['title']}}</a></li>
+                        @foreach(array_slice($linkslist, 0, ceil(count($linkslist) / 2)) as $link)
+                            <li><a href="{{$link->data()['link']}}" class="link-list"
+                                   target="_blank">{{$link->data()['title']}}</a></li>
                         @endforeach
                     </ul>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-4 footer-link2">
-                    @foreach(array_slice($newslist, ceil(count($newslist) / 2)) as $news)
-                        <li><a href="{{$news->data()['link']}}" class="link-list"
-                               target="_blank">{{$news->data()['title']}}</a></li>
+                    @foreach(array_slice($linkslist, ceil(count($linkslist) / 2)) as $link)
+                        <li><a href="{{$link->data()['link']}}" class="link-list"
+                               target="_blank">{{$link->data()['title']}}</a></li>
                     @endforeach
                 </div>
 
@@ -280,6 +283,8 @@
         </div>
     </div>
 </section>
+
+
 <section class="padding-three title-bc" id="links">
     <div class="container">
         <div class="row">
@@ -314,83 +319,118 @@
     </div>
 </section>
 
-{{--<section class="padding-three title-bc" id="news">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row">--}}
-{{--            <!-- section title -->--}}
-{{--            <div class="col-md-6 col-sm-6 xs-margin-bottom-four">--}}
-{{--                <span--}}
-{{--                    class="text-large letter-spacing-2 black-text font-weight-600 text-uppercase agency-title">News</span>--}}
-{{--            </div>--}}
-{{--            <!-- end section title -->--}}
-{{--            <!-- section highlight text -->--}}
-{{--            <div class="col-md-6 col-sm-6 text-right xs-text-left">--}}
-{{--            </div>--}}
-{{--            <!-- end section highlight text -->--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
+<section class="padding-three title-bc" id="news">
+    <div class="container">
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-6 col-sm-6 xs-margin-bottom-four">
+                <span
+                    class="text-large letter-spacing-2 black-text font-weight-600 text-uppercase agency-title">News</span>
+            </div>
+            <!-- end section title -->
+            <!-- section highlight text -->
+            <div class="col-md-6 col-sm-6 text-right xs-text-left">
+            </div>
+            <!-- end section highlight text -->
+        </div>
+    </div>
+</section>
 <!-- content section -->
-{{--<section class="wow fadeIn">--}}
-{{--    <div class="container">--}}
-{{--        <div class="row blog-3col">--}}
-{{--            <!-- post item -->--}}
-{{--            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">--}}
-{{--                <div class="blog-image"><a href=""><img src="/images/blog-post16.jpg" alt=""/></a></div>--}}
-{{--                <div class="blog-details">--}}
-{{--                    <div class="blog-title"><a href="blog-single-right-sidebar.html">Minimum Usable Design</a></div>--}}
-{{--                    <div class="separator-line bg-black no-margin-lr"></div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- end post item -->--}}
-{{--            <!-- post item -->--}}
-{{--            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">--}}
-{{--                <div class="blog-image"><a href=""><img src="/images/blog-post16.jpg" alt=""/></a></div>--}}
-{{--                <div class="blog-details">--}}
-{{--                    <div class="blog-title"><a href="blog-single-right-sidebar.html">Minimum Usable Design</a></div>--}}
-{{--                    <div class="separator-line bg-black no-margin-lr"></div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- end post item -->--}}
-{{--            <!-- post item -->--}}
-{{--            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">--}}
-{{--                <div class="blog-image"><a href=""><img src="/images/blog-post16.jpg" alt=""/></a></div>--}}
-{{--                <div class="blog-details">--}}
-{{--                    <div class="blog-title"><a href="blog-single-right-sidebar.html">Minimum Usable Design</a></div>--}}
-{{--                    <div class="separator-line bg-black no-margin-lr"></div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- end post item -->--}}
-{{--            <!-- post item -->--}}
-{{--            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">--}}
-{{--                <div class="blog-image"><a href=""><img src="/images/blog-post16.jpg" alt=""/></a></div>--}}
-{{--                <div class="blog-details">--}}
-{{--                    <div class="blog-title"><a href="blog-single-right-sidebar.html">Minimum Usable Design</a></div>--}}
-{{--                    <div class="separator-line bg-black no-margin-lr"></div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- end post item -->--}}
-{{--            <!-- post item -->--}}
-{{--            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">--}}
-{{--                <div class="blog-image"><a href=""><img src="/images/blog-post16.jpg" alt=""/></a></div>--}}
-{{--                <div class="blog-details">--}}
-{{--                    <div class="blog-title"><a href="blog-single-right-sidebar.html">Minimum Usable Design</a></div>--}}
-{{--                    <div class="separator-line bg-black no-margin-lr"></div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- end post item -->--}}
-{{--            <!-- post item -->--}}
-{{--            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">--}}
-{{--                <div class="blog-image"><a href=""><img src="/images/blog-post16.jpg" alt=""/></a></div>--}}
-{{--                <div class="blog-details">--}}
-{{--                    <div class="blog-title"><a href="blog-single-right-sidebar.html">Minimum Usable Design</a></div>--}}
-{{--                    <div class="separator-line bg-black no-margin-lr"></div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- end post item -->--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</section>--}}
+<section class="wow fadeIn">
+    <div class="container">
+        <div class="row blog-3col">
+            @php
+                $embed = new \Embed\Embed();
+            @endphp
+        @foreach($newslist as $news)
+            <!-- post item -->
+            @php
+                $thumbnail = $embed->get($news->data()['link'])->image;
+            @endphp
+                <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">
+                    <div class="blog-image"><a href=""><img src="{{$thumbnail->getHost() . $thumbnail->getPath()}}" alt="{{$news->data()['title']}}"/></a></div>
+                    <div class="blog-details">
+                        <div class="blog-title"><a href="{{$news->data()['link']}}">{{$news->data()['title']}}</a></div>
+                        <div class="separator-line bg-black no-margin-lr"></div>
+                    </div>
+                </div>
+                <!-- end post item -->
+            @endforeach
+        </div>
+    </div>
+</section>
+<!-- end content section -->
+<section class="padding-three title-bc" id="gallery">
+    <div class="container">
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-6 col-sm-6 xs-margin-bottom-four">
+                <span
+                    class="text-large letter-spacing-2 black-text font-weight-600 text-uppercase agency-title">Gallery</span>
+            </div>
+            <!-- end section title -->
+            <!-- section highlight text -->
+            <div class="col-md-6 col-sm-6 text-right xs-text-left">
+            </div>
+            <!-- end section highlight text -->
+        </div>
+    </div>
+</section>
+<!-- content section -->
+<section class="wow fadeIn">
+    <div class="container">
+        <div class="row blog-3col">
+            <!-- post item -->
+            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">
+                <div class="blog-image"><a href="allery.html"><img src="/images/blog-post16.jpg" alt=""/></a></div>
+                <div class="blog-details">
+                    <div class="blog-title"><a href="gallery.html">Minimum Usable Design</a></div>
+                </div>
+            </div>
+            <!-- end post item -->
+            <!-- post item -->
+            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">
+                <div class="blog-image"><a href="gallery.html"><img src="/images/blog-post16.jpg" alt=""/></a></div>
+                <div class="blog-details">
+                    <div class="blog-title"><a href="gallery.html">Minimum Usable Design</a></div>
+                </div>
+            </div>
+            <!-- end post item -->
+            <!-- post item -->
+            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">
+                <div class="blog-image"><a href="gallery.html"><img src="/images/blog-post16.jpg" alt=""/></a></div>
+                <div class="blog-details">
+                    <div class="blog-title"><a href="gallery.html">Minimum Usable Design</a></div>
+                </div>
+            </div>
+            <!-- end post item -->
+            <!-- post item -->
+            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">
+                <div class="blog-image"><a href=""><img src="/images/blog-post16.jpg" alt=""/></a></div>
+                <div class="blog-details">
+                    <div class="blog-title"><a href="gallery.html">Minimum Usable Design</a></div>
+                </div>
+            </div>
+            <!-- end post item -->
+            <!-- post item -->
+            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">
+                <div class="blog-image"><a href="gallery.html"><img src="/images/blog-post16.jpg" alt=""/></a></div>
+                <div class="blog-details">
+                    <div class="blog-title"><a href="gallery.html">Minimum Usable Design</a></div>
+                </div>
+            </div>
+            <!-- end post item -->
+            <!-- post item -->
+            <div class="col-md-4 col-sm-6 col-xs-6 blog-listing wow fadeInUp" data-wow-duration="300ms">
+                <div class="blog-image"><a href="gallery.html"><img src="/images/blog-post16.jpg" alt=""/></a></div>
+                <div class="blog-details">
+                    <div class="blog-title"><a href="gallery.html">Minimum Usable Design</a></div>
+                </div>
+            </div>
+            <!-- end post item -->
+        </div>
+    </div>
+</section>
 <!-- end content section -->
 
 <section class="padding-three title-bc" id="contact">
