@@ -13,7 +13,7 @@
                     <div class="col-md-12 slider-typography">
                         <div class="slider-text-middle-main pull-left text-left">
                             <div class="slider-text-middle">
-                                <h1 class="white-text margin-five">Welcome To<br>Teamcot Bangladesh</h1>
+                                <h1 class="white-text margin-five">Welcome To<br>Teamcot Bangladesh Ltd</h1>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center center-col">
                     <img class="about-logo" src="/images/newimg/logo.png">
-                    <span class="margin-three no-margin-top display-block letter-spacing-2">EST. 2001</span>
+                    <span class="margin-three no-margin-top display-block letter-spacing-2">EST. 2016</span>
                     <h1>ABOUT TEAMCOT BANGLADESH LTD</h1>
                     <p class="text-med width-90 center-col margin-five no-margin-bottom">Teamcot Bangladesh Ltd is a
                         cotton agency in Bangladesh having more than 20 years working experience in this trade. We
@@ -346,12 +346,14 @@
             <div class="row">
                 <div class="col-md-9 text-center center-col">
                     <div class="col-md-4 col-sm-4 text-center"><i class="icon-phone medium-icon black-text"></i>
-                        <h6 class="black-text margin-two no-margin-bottom">+880-2-9330214</h6>
+                        @foreach($contacts as $contact)
+                            <h6 class="black-text margin-two no-margin-bottom">{{$contact->data()['number']}}</h6>
+                        @endforeach
                     </div>
                     <div class="col-md-4 col-sm-4 text-center"><i class="icon-map-pin medium-icon black-text"></i>
                         <h6 class="black-text margin-two no-margin-bottom">8/C, Al-Haj Shamsuddin Mansion, 17 New
                             Eskaton
-                            Road, Dhaka-1000</h6>
+                            Road, BORO MOGHBAZAR, Dhaka-1000</h6>
                     </div>
                     <div class="col-md-4 col-sm-4 text-center"><i class="icon-envelope medium-icon black-text"></i>
                         <h6 class="black-text margin-two no-margin-bottom"><a class="black-text"
