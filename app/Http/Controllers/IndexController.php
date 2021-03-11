@@ -21,6 +21,11 @@ class IndexController extends Controller
         $this->db = $factory->createFirestore()->database();
     }
 
+    public function showGallery($slug){
+        return view('gallery', [
+            'gallery' => $this->db->collection('galleries')->document($slug)->snapshot(),
+        ]);
+    }
 
     public function show()
     {

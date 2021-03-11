@@ -19,5 +19,6 @@ Route::get('/clear', function () {
 });
 
 
-Route::get('/', [\App\Http\Controllers\IndexController::class, 'show']);
+Route::get('/', [\App\Http\Controllers\IndexController::class, 'show'])->name('index');
+Route::get('/galleries/{slug}', [\App\Http\Controllers\IndexController::class, 'showGallery'])->name('gallery');
 Route::post('/messages', [\App\Http\Controllers\IndexController::class, 'saveMessage']);
