@@ -96,7 +96,7 @@
         </div>
     </section>
     <!-- end about section -->
-    <section class="padding-three title-bc">
+    <section class="padding-three title-bc" id="team">
         <div class="container">
             <div class="row">
                 <!-- section title -->

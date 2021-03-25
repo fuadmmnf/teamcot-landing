@@ -70,9 +70,10 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#slider" class="inner-link">Home</a></li>
                         <li><a href="#about" class="inner-link">About</a></li>
+                        <li><a href="#team" class="inner-link">Our Team</a></li>
                         <li><a href="#report" class="inner-link">Report</a></li>
                         <li><a href="#links" class="inner-link">Links</a></li>
-                        <li><a href="#rules" class="inner-link">Rules</a></li>
+                        <li><a href="#rules" class="inner-link">Rules & Arbitration</a></li>
                         <li><a href="#news" class="inner-link">News</a></li>
                         <li><a href="#gallery" class="inner-link">Gallery</a></li>
                         <li><a href="#contact-us" class="inner-link">Contact</a></li>
@@ -92,11 +93,8 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 footer-social text-right text-center">
                 <!-- social media link -->
-                <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                <a target="_blank" href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
-                <a target="_blank" href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
-                <a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a target="https://www.facebook.com/teamcotbd/" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a target="https://www.youtube.com/channel/UCD_0RAkin3NrNm4KRE1U3AA" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
                 <!-- end social media link -->
             </div>
