@@ -21,4 +21,5 @@ Route::get('/clear', function () {
 
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'show'])->name('index');
 Route::get('/galleries/{slug}', [\App\Http\Controllers\IndexController::class, 'showGallery'])->name('gallery');
+Route::get('/teammember/{doc_id}', [\App\Http\Controllers\IndexController::class, 'showMemberDetail'])->name('memberdetail');
 Route::post('/messages', [\App\Http\Controllers\IndexController::class, 'saveMessage']);

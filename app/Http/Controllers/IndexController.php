@@ -40,6 +40,13 @@ class IndexController extends Controller
         ]);
     }
 
+    public function showMemberDetail($doc_id){
+        return view('detail', [
+            'teammember' => $this->db->collection('teammembers')->document($doc_id)->snapshot(),
+        ]);
+    }
+
+
     public function saveMessage(){
         $this->db->collection('messages')->add([
             'name' => request('name'),
