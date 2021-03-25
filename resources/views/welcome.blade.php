@@ -5,7 +5,7 @@
 @section('content')
 
     <section id="slider" class="full-screen no-padding travel-agency-slider">
-        <div id="owl-demo" class="owl-carousel owl-theme light-pagination">
+        <div id="owl-demo" class="owl-carousel owl-theme light-pagination" >
             <!-- slider item -->
             <div class="item owl-bg-img" style="background-image:url('/images/newimg/1.jpg');">
                 <div class="slider-overlay bg-black"></div>
@@ -364,7 +364,7 @@
             </div>
             <div class="row">
                 <!-- form -->
-                <form id="contactusform" method="POST">
+                <form id="contactusform"  action="{{ url('messages')  }}" method="POST">
                     {{ csrf_field() }}
                     <div class="col-md-10 col-sm-12 center-col">
                         <div class="row">

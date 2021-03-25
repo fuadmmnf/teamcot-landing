@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     // Show Animated Counters
     animatecounters();
-    
+
     /* ===================================
     counter number reset while scrolling
     ====================================== */
@@ -26,7 +26,7 @@ $(document).ready(function () {
             $(this).addClass('appear');
         }
     });
-        
+
     /*==============================================================*/
     //Smooth Scroll - START CODE
     /*==============================================================*/
@@ -157,10 +157,10 @@ $(document).ready(function () {
                     setTimeout(autoscrolltoelement, 500);
                     hashfilter=temphashfilter;
                  }
-             });        
+             });
     }
-    
-    
+
+
 
     $portfolio.imagesLoaded(function () {
         $portfolio.isotope({
@@ -186,10 +186,10 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
         var selector = $(this).attr('data-filter');
         $portfolio.isotope({filter: selector});
-       
+
         if (selector.substr(1)!="" && selector.substr(1)!="#")
         {
-             location.hash = selector.substr(1);     
+             location.hash = selector.substr(1);
         }
         else
         {
@@ -233,6 +233,9 @@ $(document).ready(function () {
 
 
     $("#owl-demo").owlCarousel({
+        autoPlay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
         navigation: true, // Show next and prev buttons
         slideSpeed: 300,
         paginationSpeed: 400,
@@ -241,6 +244,9 @@ $(document).ready(function () {
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
     $("#owl-demo-small").owlCarousel({
+        autoPlay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
         navigation: true, // Show next and prev buttons
         slideSpeed: 300,
         paginationSpeed: 400,
@@ -248,6 +254,9 @@ $(document).ready(function () {
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
     $("#owl-demo-products").owlCarousel({
+        autoPlay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false,
         navigation: true, // Show next and prev buttons
         slideSpeed: 300,
         paginationSpeed: 400,
@@ -1507,7 +1516,7 @@ $(document).ready(function () {
 });
 
     function animatecounters() {
-    
+
     /*==============================================================*/
     //Counter Number - START CODE
     /*==============================================================*/
@@ -1521,7 +1530,7 @@ $(document).ready(function () {
     /*==============================================================*/
     //Counter Number - END CODE
     /*==============================================================*/
-    
+
     }
 
 var inViewchart = false;
@@ -1592,7 +1601,7 @@ $(window).scroll(function () {
         }
     }
 
-  
+
 
 
 
@@ -1612,7 +1621,7 @@ function SetResizeHeaderMenu() {
 /*==============================================================*/
 //Parallax - START CODE
 /*==============================================================*/
-// Parallax Fix Image Scripts 
+// Parallax Fix Image Scripts
 
 $('.parallax-fix').each(function () {
     if ($(this).children('.parallax-background-img').length) {
@@ -1725,7 +1734,7 @@ function scrollToDownSection() {
 function SetResizeContent() {
     var minheight = $(window).height();
     $(".full-screen").css('min-height', minheight);
-    
+
     var minwidth = $(window).width();
     $(".full-screen-width").css('min-width', minwidth);
 }
