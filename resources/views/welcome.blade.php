@@ -60,7 +60,8 @@
                     <span class="margin-three no-margin-top display-block letter-spacing-2">EST. 2016</span>
                     <h1>ABOUT TEAMCOT BANGLADESH LTD</h1>
                     <p class="text-med width-90 center-col margin-five no-margin-bottom">Teamcot Bangladesh Ltd is a
-                        cotton agency in Bangladesh having more than 20 years working experience in this trade. We
+                        cotton agency in Bangladesh having more than {{date('Y') - 2001}} years working experience in
+                        this trade. We
                         mainly deal with raw cotton. Our motto is to work with only ethical buyers and sellers with the
                         view of establishing safe trading.</p>
                     <div class="row margin-five no-margin-bottom">
@@ -351,9 +352,8 @@
                         @endforeach
                     </div>
                     <div class="col-md-4 col-sm-4 text-center"><i class="icon-map-pin medium-icon black-text"></i>
-                        <h6 class="black-text margin-two no-margin-bottom">8/C, Al-Haj Shamsuddin Mansion, 17 New
-                            Eskaton
-                            Road, BORO MOGHBAZAR, Dhaka-1000</h6>
+                        <h6 class="black-text margin-two no-margin-bottom">8/C, Al-Haj Shamsuddin Mansion, 17, BORO
+                            MOGHBAZAR, Dhaka-1000</h6>
                     </div>
                     <div class="col-md-4 col-sm-4 text-center"><i class="icon-envelope medium-icon black-text"></i>
                         <h6 class="black-text margin-two no-margin-bottom"><a class="black-text"
