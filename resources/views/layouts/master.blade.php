@@ -54,10 +54,10 @@
     role="navigation">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-6"><a class="logo-light" href="index.html"><img alt=""
+            <div class="col-md-3 col-sm-3 col-xs-6"><a class="logo-light" href="{{route('index')}}"><img alt=""
                                                                                                  src="/images/newimg/logo.png"
                                                                                                  class="logo"/></a><a
-                    class="logo-dark" href="index.html"><img
+                    class="logo-dark" href="{{route('index')}}"><img
                         alt="" src="/images/newimg/logo.png" class="logo"/></a>
             </div>
             <div class="navbar-header">

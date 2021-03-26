@@ -41,7 +41,7 @@
                     <div class="col-md-12 slider-typography">
                         <div class="slider-text-middle-main pull-left text-left">
                             <div class="slider-text-middle">
-                                <h1 class="white-text margin-five">20 years working<br>experience in this trade</h1>
+                                <h1 class="white-text margin-five">{{date('Y') - 2015}} years working<br>experience in this trade</h1>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                     <span class="margin-three no-margin-top display-block letter-spacing-2">EST. 2016</span>
                     <h1>ABOUT TEAMCOT BANGLADESH LTD</h1>
                     <p class="text-med width-90 center-col margin-five no-margin-bottom">Teamcot Bangladesh Ltd is a
-                        cotton agency in Bangladesh having more than {{date('Y') - 2001}} years working experience in
+                        cotton agency in Bangladesh having more than {{date('Y') - 2015}} years working experience in
                         this trade. We
                         mainly deal with raw cotton. Our motto is to work with only ethical buyers and sellers with the
                         view of establishing safe trading.</p>
@@ -366,7 +366,7 @@
             </div>
             <div class="row">
                 <!-- form -->
-                <form id="contactusform"  action="{{ url('messages')  }}" method="POST">
+                <form id="contactusform"  action="{{ url('/messages')  }}" method="POST">
                     {{ csrf_field() }}
                     <div class="col-md-10 col-sm-12 center-col">
                         <div class="row">
@@ -389,7 +389,7 @@
                                     fields correctly</span></div>
                             <div class="col-md-3 col-sm-6 f-right no-padding-right">
                                 <input id="contact-us-button"
-                                       name="send message" type="button"
+                                       name="send message" type="submit"
                                        value="send message"
                                        class="btn btn-black no-margin-top f-right no-margin-lr">
                             </div>
