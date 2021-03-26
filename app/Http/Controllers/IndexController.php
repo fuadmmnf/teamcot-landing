@@ -32,7 +32,7 @@ class IndexController extends Controller
         return view('welcome', [
             'newslist' => $this->db->collection('news')->documents()->rows(),
             'linkslist' => $this->db->collection('links')->documents()->rows(),
-            'teammembers' => $this->db->collection('teammembers')->documents()->rows(),
+            'teammembers' => $this->db->collection('teammembers')->orderBy('created_at')->documents()->rows(),
             'reports' => $this->db->collection('reports')->documents()->rows(),
             'rules' => $this->db->collection('rules')->documents()->rows(),
             'contacts' => $this->db->collection('contacts')->documents()->rows(),

@@ -125,7 +125,7 @@
                         <span
                             class="team-name text-uppercase black-text letter-spacing-2 display-block font-weight-600">{{$teammember->data()['name']}}</span>
                             <span
-                                class="team-post text-uppercase letter-spacing-2 display-block">{{$teammember->data()['designation']}}</span>
+                                class="team-post  text-uppercase letter-spacing-2 display-block">{{$teammember->data()['designation']}}</span>
 
                             <a href="{{route('memberdetail', ['doc_id' => $teammember->id()])}}" class="highlight-button btn btn-small button xs-margin-bottom-five">View Details</a>
                         </figure>
