@@ -354,8 +354,7 @@
                         @endforeach
                     </div>
                     <div class="col-md-4 col-sm-4 text-center"><i class="icon-map-pin medium-icon black-text"></i>
-                        <h6 class="black-text margin-two no-margin-bottom">8/C, Al-Haj Shamsuddin Mansion, 17, BORO
-                            MOGHBAZAR, Dhaka-1000</h6>
+                        <h6 class="black-text margin-two no-margin-bottom">Office No-03, Level-13, Tropical NMG Tower, 224/1, New Eskaton Road Dhaka-1000, Bangladesh.</h6>
                     </div>
                     <div class="col-md-4 col-sm-4 text-center"><i class="icon-envelope medium-icon black-text"></i>
                         <h6 class="black-text margin-two no-margin-bottom"><a class="black-text"
@@ -408,7 +407,7 @@
                     <div class="mapouter">
                         <div class="gmap_canvas">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14607.917151138381!2d90.402763!3d23.748118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x790d8925c92d4242!2sAlhaz%20Shamsuddin%20Mansion!5e0!3m2!1sen!2sus!4v1611762652942!5m2!1sen!2sus"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.0008612121765!2d90.39419149678953!3d23.747348700000018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9fae2df6aa7%3A0x74b739a6f21cff5f!2sTeamcot%20Bangladesh%20Ltd!5e0!3m2!1sen!2sbd!4v1746854965024!5m2!1sen!2sbd"
                                 width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
                                 aria-hidden="false" tabindex="0"></iframe>
                         </div>
